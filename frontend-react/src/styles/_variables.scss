@@ -1,0 +1,112 @@
+// Paleta de Cores - Centro Social São Martinho de Lima
+// Baseada no logotipo da instituição
+
+// Cores Principais
+$cream: #F5EBD7;           // Fundo principal (bege creme do logotipo)
+$cream-light: #FBF7F0;     // Fundo alternativo mais claro
+$cream-dark: #E8DCC4;      // Variação mais escura
+
+$olive-green: #4A5D3C;     // Verde oliva das folhas
+$olive-green-light: #5D7350;
+$olive-green-dark: #3A4A2F;
+
+$peach: #E8C4B8;           // Rosa pêssego das flores
+$peach-light: #F2D8CF;
+$peach-dark: #D4A99B;
+
+$lilac: #C4B8D9;           // Lilás suave das flores
+$lilac-light: #D8CEE8;
+$lilac-dark: #A99BC4;
+
+$brown-dark: #3D2B1F;      // Marrom escuro (hábito dominicano)
+$brown-medium: #5C4033;
+$brown-light: #8B6914;     // Marrom do rosário
+
+// Cores Neutras
+$white: #FFFFFF;
+$gray-100: #F8F9FA;
+$gray-200: #E9ECEF;
+$gray-300: #DEE2E6;
+$gray-400: #CED4DA;
+$gray-500: #ADB5BD;
+$gray-600: #6C757D;
+$gray-700: #495057;
+$gray-800: #343A40;
+$gray-900: #212529;
+$black: #000000;
+
+// Cores Semânticas
+$primary: $olive-green;
+$secondary: $brown-dark;
+$success: #28A745;
+$info: $lilac;
+$warning: #FFC107;
+$danger: #DC3545;
+$light: $cream-light;
+$dark: $brown-dark;
+
+// Cores de Texto
+$text-primary: $brown-dark;
+$text-secondary: $gray-600;
+$text-muted: $gray-500;
+$text-light: $white;
+
+// Cores de Links
+$link-color: $olive-green;
+$link-hover-color: $olive-green-dark;
+
+// Sombras
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($brown-dark, 0.075);
+$box-shadow: 0 0.5rem 1rem rgba($brown-dark, 0.15);
+$box-shadow-lg: 0 1rem 3rem rgba($brown-dark, 0.175);
+
+// Bordas
+$border-radius: 0.5rem;
+$border-radius-sm: 0.25rem;
+$border-radius-lg: 1rem;
+$border-color: $cream-dark;
+
+// Tipografia
+$font-family-sans-serif: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-serif: 'Georgia', 'Times New Roman', serif;
+$font-family-heading: 'Playfair Display', $font-family-serif;
+
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-sm: 0.875rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 1.6;
+$line-height-sm: 1.4;
+$line-height-lg: 1.8;
+
+// Espaçamentos
+$spacer: 1rem;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Container max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+// Transições
+$transition-base: all 0.3s ease-in-out;
+$transition-fade: opacity 0.15s linear;
