@@ -251,11 +251,7 @@ const QuemSomos = () => {
                 muitas famílias, fragilizando os laços familiares e sociais.
               </p>
               <p>
-                Com três anos de atuação formal, a instituição desenvolve ações de proteção social
-                básica voltadas a indivíduos e famílias em situação de risco e vulnerabilidade,
-                promovendo atividades de caráter socioeducativo e comunitário. Dessa maneira, desde
-                sua fundação, busca o fortalecimento da rede socioassistencial por meio da articulação
-                com outras políticas públicas e serviços do território.
+                Com três anos de atuação formal, a instituição desenvolve ações na atenção básica à saúde, com foco na promoção, prevenção e intervenção precoce na primeiríssima infância, atendendo indivíduos e famílias em situação de vulnerabilidade. Atua com projetos inovadores e oferta de práticas integrativas em saúde, alinhadas aos princípios do Sistema Único de Saúde (SUS), em articulação com a rede de serviços do território.
               </p>
             </Col>
           </Row>

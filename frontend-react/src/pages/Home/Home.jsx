@@ -39,22 +39,22 @@ const Home = () => {
 
   const news = [
     {
-      date: '15 Dez 2024',
+      date: '04 Dez 2025',
       category: 'Evento',
-      title: 'Festa de Natal Solidária 2024',
-      excerpt: 'Celebramos o Natal com as famílias atendidas, distribuindo presentes e alegria.'
+      title: 'Exposição "Memórias da Vila"',
+      excerpt: 'Parceria com a UNESP apresenta histórias e memórias dos bairros da região no Museu Municipal.'
     },
     {
-      date: '01 Dez 2024',
+      date: '13 Set 2025',
+      category: 'Conquista',
+      title: 'Formatura do Curso de Sistema Digital',
+      excerpt: 'Três adolescentes concluíram o curso de programação e eletrônica após meses de dedicação.'
+    },
+    {
+      date: '22 Set 2025',
       category: 'Conquista',
       title: 'Declaração de Utilidade Pública',
-      excerpt: 'O Centro Social foi declarado de Utilidade Pública pela Lei 11.728/2025.'
-    },
-    {
-      date: '20 Nov 2024',
-      category: 'Projeto',
-      title: 'Inauguração da Nova Sala de Informática',
-      excerpt: 'Espaço equipado para capacitação digital dos nossos assistidos.'
+      excerpt: 'O Centro Social foi declarado de Utilidade Pública pela Lei Municipal nº 11.728/2025.'
     }
   ];
 

@@ -43,7 +43,7 @@ const Header = () => {
               </span>
               <span>
                 <FaEnvelope className="me-2" />
-                contato@cssaomartinhodelima.com.br
+                centrosocialsaomartinhodelima@gmail.com
               </span>
             </div>
             <div>
@@ -134,7 +134,7 @@ const Header = () => {
                 </p>
                 <p className="small text-muted">
                   <FaEnvelope className="me-2" />
-                  contato@cssaomartinhodelima.com.br
+                  centrosocialsaomartinhodelima@gmail.com
                 </p>
               </div>
             </Offcanvas.Body>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Row, Col, Card, Button, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaCalendar, FaArrowRight, FaTag, FaNewspaper } from 'react-icons/fa';
 
 const Noticias = () => {
@@ -16,63 +16,103 @@ const Noticias = () => {
   const news = [
     {
       id: 1,
-      date: '15 Dezembro 2024',
+      date: '04 Dezembro 2025',
       category: 'eventos',
-      title: 'Festa de Natal Solidária 2024',
-      excerpt: 'Celebramos o Natal com as famílias atendidas pelo Centro Social, com distribuição de presentes, apresentações culturais e muita alegria.',
-      content: 'O Centro Social São Martinho de Lima realizou sua tradicional Festa de Natal Solidária...',
+      title: 'Exposição "Memórias da Vila"',
+      excerpt: 'O Programa Comunidade Integrativa, em parceria com a UNESP e a turma de Arquitetura e Urbanismo, apresenta a exposição que revela histórias e memórias dos bairros da região.',
+      content: 'Fruto do trabalho conjunto entre estudantes, professores e moradores, a exposição acontece no Museu e Arquivo Histórico Municipal de 4 a 14 de dezembro.',
       image: null,
       featured: true
     },
     {
       id: 2,
-      date: '01 Dezembro 2024',
-      category: 'conquistas',
-      title: 'Centro Social é Declarado de Utilidade Publica',
-      excerpt: 'Um marco histórico para nossa instituição: fomos reconhecidos como entidade de Utilidade Publica pela Lei Municipal 11.728/2025.',
-      content: 'É com imensa alegria que comunicamos que o Centro Social São Martinho de Lima foi declarado...',
+      date: '14 Novembro 2025',
+      category: 'eventos',
+      title: 'Palestra da Polícia Ambiental',
+      excerpt: 'A Comunidade Integrativa recebeu a equipe da Polícia Ambiental para uma conversa sobre fauna, animais silvestres e cuidados com animais domésticos.',
+      content: 'O grupo se envolveu com o tema, compartilhando histórias e aprendendo sobre convivência responsável com a natureza.',
       image: null,
-      featured: true
+      featured: false
     },
     {
       id: 3,
-      date: '20 Novembro 2024',
+      date: '10 Novembro 2025',
       category: 'projetos',
-      title: 'Inauguração da Nova Sala de Informática',
-      excerpt: 'Novo espaço equipado com computadores modernos para capacitação digital dos nossos assistidos e da comunidade.',
-      content: 'Inauguramos nossa nova sala de informática, fruto de parcerias e doações...',
+      title: 'Novembro Roxo - Projeto Entre Ninhos',
+      excerpt: 'No mês de conscientização sobre a prematuridade, destacamos o trabalho do Projeto Entre Ninhos no acompanhamento de bebês e suas famílias desde os primeiros meses de vida.',
+      content: 'A intervenção precoce permite apoiar a construção do vínculo, fortalecer os recursos da família e favorecer o desenvolvimento do bebê.',
       image: null,
       featured: false
     },
     {
       id: 4,
-      date: '15 Novembro 2024',
-      category: 'campanhas',
-      title: 'Campanha do Agasalho 2024 - Balanço Final',
-      excerpt: 'Encerramos a campanha com mais de 500 peças arrecadadas e distribuídas para famílias em situação de vulnerabilidade.',
-      content: 'Agradecemos a todos que contribuíram para o sucesso da Campanha do Agasalho 2024...',
+      date: '11 Outubro 2025',
+      category: 'eventos',
+      title: '1º Yakissoba Beneficente',
+      excerpt: 'O Centro Social realizou seu primeiro Yakissoba beneficente, um evento repleto de sabor e solidariedade para apoiar as atividades da instituição.',
+      content: 'Com convites a R$40 servindo até duas pessoas, o evento reuniu a comunidade em torno de uma causa nobre.',
       image: null,
       featured: false
     },
     {
       id: 5,
-      date: '10 Outubro 2024',
+      date: '02 Outubro 2025',
       category: 'eventos',
-      title: 'Dia das Crianças no Centro Social',
-      excerpt: 'Comemoração especial com brincadeiras, lanches e muita diversão para as crianças atendidas.',
-      content: 'O Dia das Crianças foi celebrado com uma grande festa...',
+      title: 'Oficina de Memórias dos Bairros',
+      excerpt: 'Em parceria com a UNESP-FCT, realizamos oficina para resgatar memórias dos bairros Jardim Guanabara, Vila Operária, Vale das Parreiras, Vila Angélica e Jardim São Francisco.',
+      content: 'Moradores compartilharam fotos, objetos e histórias que marcaram a trajetória dos bairros.',
       image: null,
       featured: false
     },
     {
       id: 6,
-      date: '01 Outubro 2024',
-      category: 'projetos',
-      title: 'Início do Curso de Artesanato',
-      excerpt: 'Nova turma de capacitação em artesanato para geração de renda. Inscrições abertas para a comunidade.',
-      content: 'Estamos iniciando uma nova turma do nosso curso de artesanato...',
+      date: '01 Outubro 2025',
+      category: 'eventos',
+      title: 'Dia do Idoso na Comunidade Integrativa',
+      excerpt: 'Homenagem especial aos idosos da Comunidade Integrativa, moradores que construíram e fortaleceram a história do bairro com luta e coragem.',
+      content: 'Celebramos aqueles que são raiz, memória viva e exemplo de perseverança para toda a comunidade.',
       image: null,
       featured: false
+    },
+    {
+      id: 7,
+      date: '18 Setembro 2025',
+      category: 'projetos',
+      title: 'Parceria com Arquitetura e Urbanismo da UNESP',
+      excerpt: 'Recebemos universitários do curso de Arquitetura e Urbanismo da UNESP em projeto de extensão para resgatar memórias e fortalecer a identidade comunitária.',
+      content: 'Quando a universidade caminha junto com a comunidade, nasce uma força capaz de gerar pertencimento, dignidade e transformação social.',
+      image: null,
+      featured: false
+    },
+    {
+      id: 8,
+      date: '13 Setembro 2025',
+      category: 'conquistas',
+      title: 'Formatura do Curso de Sistema Digital',
+      excerpt: 'Três adolescentes concluíram o curso de Sistema Digital, aprendendo lógica, programação e eletrônica ao longo de meses de dedicação aos sábados.',
+      content: 'Celebramos muito mais que certificados: conquistas, superações e novos começos. O primeiro certificado da vida deles e certamente o primeiro de muitos.',
+      image: null,
+      featured: true
+    },
+    {
+      id: 9,
+      date: '01 Agosto 2025',
+      category: 'eventos',
+      title: 'Cinema da Infância Missionária',
+      excerpt: 'A Infância Missionária São Martinho de Lima promoveu uma noite de cinema para as crianças, com pipoca, refrigerante e muita diversão.',
+      content: 'Uma noite especial de alegria e confraternização para as crianças da comunidade.',
+      image: null,
+      featured: false
+    },
+    {
+      id: 10,
+      date: '22 Setembro 2025',
+      category: 'conquistas',
+      title: 'Declaração de Utilidade Pública',
+      excerpt: 'O Centro Social São Martinho de Lima foi declarado de Utilidade Pública pela Lei Municipal nº 11.728/2025, reconhecendo oficialmente o trabalho social desenvolvido na comunidade.',
+      content: 'Um marco histórico para nossa instituição. A declaração de Utilidade Pública reconhece o importante trabalho social que desenvolvemos na comunidade do Vale das Parreiras.',
+      image: null,
+      featured: true
     }
   ];
 

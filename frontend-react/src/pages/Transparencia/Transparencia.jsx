@@ -14,6 +14,9 @@ import {
 import estatuto from '../../assets/documents/cssml-estatuto.pdf';
 import ataTermoPosse from '../../assets/documents/cssml-ata-termo-posse.pdf';
 import leiUtilidadePublica from '../../assets/documents/cssml-lei-utilidade-publica.pdf';
+import atestadoCmdca from '../../assets/documents/cssml-atestado-cmdca-2025.pdf';
+import atestadoCmi from '../../assets/documents/cssml-atestado-cmi-2025.pdf';
+import atestadoCms from '../../assets/documents/cssml-atestado-cms-2025.pdf';
 import balancoPatrimonial from '../../assets/documents/cssml-balanco-patrimonial-2024.pdf';
 import demonstracaoResultado from '../../assets/documents/cssml-demonstracao-resultado-2024.pdf';
 import planoTrabalho from '../../assets/documents/cssml-plano-trabalho-institucional-2026.pdf';
@@ -48,6 +51,24 @@ const Transparencia = () => {
           title: 'Lei de Utilidade Pública',
           description: 'Lei 11.728/2025 - Declaração de Utilidade Pública Municipal.',
           file: leiUtilidadePublica,
+          year: '2025'
+        },
+        {
+          title: 'Atestado de Inscrição - CMDCA',
+          description: 'Atestado de Inscrição no Conselho Municipal dos Direitos da Criança e do Adolescente.',
+          file: atestadoCmdca,
+          year: '2025'
+        },
+        {
+          title: 'Atestado de Inscrição - CMI',
+          description: 'Atestado de Inscrição no Conselho Municipal do Idoso.',
+          file: atestadoCmi,
+          year: '2025'
+        },
+        {
+          title: 'Atestado de Inscrição - CMS',
+          description: 'Atestado de Inscrição no Conselho Municipal de Saúde.',
+          file: atestadoCms,
           year: '2025'
         }
       ]

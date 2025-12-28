@@ -90,9 +90,9 @@ const Footer = () => {
               <li className="mb-3 d-flex align-items-start">
                 <FaMapMarkerAlt className="me-2 mt-1 flex-shrink-0" />
                 <span className="opacity-75 small">
-                  Rua Masao Koga, 253<br />
-                  Vale das Parreiras - Presidente Prudente/SP<br />
-                  CEP: 19033-195
+                  Rua Massao Koga, 247<br />
+                  Vale das Parreiras, Presidente Prudente/SP<br />
+                  CEP 19033-195
                 </span>
               </li>
               <li className="mb-2 d-flex align-items-center">
@@ -105,7 +105,7 @@ const Footer = () => {
               </li>
               <li className="d-flex align-items-center">
                 <FaEnvelope className="me-2" />
-                <span className="opacity-75 small">contato@cssaomartinhodelima.com.br</span>
+                <span className="opacity-75 small">centrosocialsaomartinhodelima@gmail.com</span>
               </li>
             </ul>
           </Col>
@@ -113,7 +113,7 @@ const Footer = () => {
           {/* Hours & Donation Column */}
           <Col lg={3} md={6}>
             <h6 className="text-uppercase mb-3">Horário de Funcionamento</h6>
-            <p className="opacity-75 small mb-1">Segunda à Sexta: 8h às 17h</p>
+            <p className="opacity-75 small mb-1">Segunda à Sexta: 8h às 18h (fecha para almoço das 12h às 14h)</p>            
             <p className="opacity-75 small mb-4">Sábado: 8h às 12h</p>
 
             <h6 className="text-uppercase mb-3">Faça uma Doação</h6>

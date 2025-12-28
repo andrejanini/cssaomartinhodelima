@@ -22,15 +22,31 @@ const Contato = () => {
   const [validated, setValidated] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const formatPhone = (value) => {
+    const numbers = value.replace(/\D/g, '');
+    if (numbers.length <= 2) {
+      return numbers.length ? `(${numbers}` : '';
+    }
+    if (numbers.length <= 7) {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2)}`;
+    }
+    if (numbers.length <= 11) {
+      return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7)}`;
+    }
+    return `(${numbers.slice(0, 2)}) ${numbers.slice(2, 7)}-${numbers.slice(7, 11)}`;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: name === 'phone' ? formatPhone(value) : value
     }));
   };
 
-  const handleSubmit = (e) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
 
@@ -40,26 +56,49 @@ const Contato = () => {
       return;
     }
 
-    // Simulação de envio
-    setSubmitted(true);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
-    setValidated(false);
+    setIsSubmitting(true);
 
-    // Reset depois de 5 segundos
-    setTimeout(() => setSubmitted(false), 5000);
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/andrejanini@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || 'Não informado',
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `[Site CSSML] ${formData.subject} - ${formData.name}`
+        })
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        setValidated(false);
+        setTimeout(() => setSubmitted(false), 5000);
+      }
+    } catch (error) {
+      console.error('Erro ao enviar:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
     {
       icon: FaMapMarkerAlt,
       title: 'Endereco',
-      content: ['Rua Masao Koga, 253', 'Vale das Parreiras - Presidente Prudente/SP', 'CEP: 19.033-195']
+      content: ['Rua Massao Koga, 247', 'Vale das Parreiras, Presidente Prudente/SP', 'CEP 19033-195']
     },
     {
       icon: FaPhone,
@@ -74,7 +113,7 @@ const Contato = () => {
     {
       icon: FaEnvelope,
       title: 'E-mail',
-      content: ['contato@cssaomartinhodelima.com.br']
+      content: ['centrosocialsaomartinhodelima@gmail.com']
     }
   ];
 
@@ -105,7 +144,7 @@ const Contato = () => {
           <Row className="g-5">
             {/* Contact Form */}
             <Col lg={7}>
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm card-static">
                 <Card.Body className="p-4 p-lg-5">
                   <h3 className="mb-4">Envie uma Mensagem</h3>
 
@@ -202,9 +241,9 @@ const Contato = () => {
                         </Form.Group>
                       </Col>
                       <Col xs={12}>
-                        <Button type="submit" variant="primary" size="lg" className="w-100">
+                        <Button type="submit" variant="primary" size="lg" className="w-100" disabled={isSubmitting}>
                           <FaPaperPlane className="me-2" />
-                          Enviar Mensagem
+                          {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
                         </Button>
                       </Col>
                     </Row>
@@ -241,7 +280,7 @@ const Contato = () => {
                     <FaClock className="text-olive me-2" />
                     <h6 className="mb-0">Horário de Funcionamento</h6>
                   </div>
-                  <p className="small mb-1">Segunda à Sexta: 8h às 17h</p>
+                  <p className="small mb-1">Segunda à Sexta: 8h às 18h (fecha para almoço das 12h às 14h)</p>
                   <p className="small mb-0">Sábado: 8h às 12h</p>
                 </Card.Body>
               </Card>

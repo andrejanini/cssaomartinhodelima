@@ -47,17 +47,6 @@ const Servicos = () => {
         'Sistema digital / Inclusão digital (sábados)',
         'Grupo de mulheres'
       ]
-    },
-    {
-      icon: FaHeart,
-      title: 'Proteção Social Básica',
-      description: 'Ações de proteção social voltadas a indivíduos e famílias em situação de risco e vulnerabilidade, promovendo atividades de caráter socioeducativo e comunitário.',
-      details: [
-        'Cadastramento e avaliação social',
-        'Atendimento a idosos (prioridade)',
-        'Encaminhamentos para rede socioassistencial',
-        'Articulação com políticas públicas do território'
-      ]
     }
   ];
 
@@ -81,14 +70,14 @@ const Servicos = () => {
       title: 'Aulas de Violão',
       description: 'Formação musical para desenvolvimento artístico e cultural da comunidade.',
       audience: 'Todas as idades',
-      schedule: 'A definir'
+      schedule: 'Sextas-feiras'
     },
     {
       icon: FaUserFriends,
       title: 'Grupo de Mulheres',
       description: 'Encontros do grupo Filhas de Maria para fortalecimento de vínculos, formação e protagonismo feminino.',
       audience: 'Mulheres da comunidade',
-      schedule: 'Semanal'
+      schedule: 'Quinzenal'
     },
     {
       icon: FaHeart,
