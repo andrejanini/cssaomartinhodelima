@@ -1,0 +1,8 @@
+# Robots.txt para Centro Social São Martinho de Lima
+# https://www.cssaomartinhodelima.com.br
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.cssaomartinhodelima.com.br/sitemap.xml
