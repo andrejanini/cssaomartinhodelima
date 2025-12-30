@@ -118,7 +118,7 @@ const Footer = () => {
 
             <h6 className="text-uppercase mb-3">Faça uma Doação</h6>
             <p className="opacity-75 small mb-2">Chave PIX (CNPJ):</p>
-            <code className="bg-dark bg-opacity-50 px-2 py-1 rounded small d-block">
+            <code className="bg-dark bg-opacity-50 px-2 py-1 rounded small d-block text-white">
               48.722.436/0001-10
             </code>
           </Col>
