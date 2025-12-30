@@ -167,7 +167,7 @@ const Home = () => {
                 </li>
                 <li className="mb-2">
                   <FaFileAlt className="text-olive me-2" />
-                  Registrada no Conselho Municipal do Idoso (CMI)
+                  Inscrita nos Conselhos Municipais: CMI, CMDCA e CMS
                 </li>
                 <li className="mb-2">
                   <FaUsers className="text-olive me-2" />
