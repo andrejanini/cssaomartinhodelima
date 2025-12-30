@@ -29,11 +29,6 @@ const Home = () => {
       icon: FaHandsHelping,
       title: 'Ações Socioeducativas',
       description: 'Capoeira, aulas de violão, inclusão digital e outras atividades para crianças, jovens e adultos.'
-    },
-    {
-      icon: FaHandHoldingHeart,
-      title: 'Proteção Social',
-      description: 'Atendimento a famílias em situação de risco e vulnerabilidade, com acompanhamento social continuado.'
     }
   ];
 
