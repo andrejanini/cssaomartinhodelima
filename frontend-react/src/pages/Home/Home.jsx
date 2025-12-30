@@ -122,9 +122,9 @@ const Home = () => {
               </p>
             </Col>
           </Row>
-          <Row className="g-4">
+          <Row className="g-4 justify-content-center">
             {services.map((service, index) => (
-              <Col md={6} lg={3} key={index}>
+              <Col md={6} lg={4} key={index}>
                 <div className="service-card">
                   <div className="service-icon">
                     <service.icon />
