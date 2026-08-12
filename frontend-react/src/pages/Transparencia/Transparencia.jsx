@@ -11,15 +11,20 @@ import {
 } from 'react-icons/fa';
 
 // Importar documentos
-import estatuto from '../../assets/documents/cssml-estatuto.pdf';
-import ataTermoPosse from '../../assets/documents/cssml-ata-termo-posse.pdf';
-import leiUtilidadePublica from '../../assets/documents/cssml-lei-utilidade-publica.pdf';
-import atestadoCmdca from '../../assets/documents/cssml-atestado-cmdca-2025.pdf';
-import atestadoCmi from '../../assets/documents/cssml-atestado-cmi-2025.pdf';
-import atestadoCms from '../../assets/documents/cssml-atestado-cms-2025.pdf';
-import balancoPatrimonial from '../../assets/documents/cssml-balanco-patrimonial-2024.pdf';
-import demonstracaoResultado from '../../assets/documents/cssml-demonstracao-resultado-2024.pdf';
-import planoTrabalho from '../../assets/documents/cssml-plano-trabalho-institucional-2026.pdf';
+import estatutoVigente from '../../assets/documents/EstatutoSocial_Marco2026.pdf';
+import estatutoFev2025 from '../../assets/documents/EstatutoSocial_Fevereiro2025.pdf';
+import ataTermoPosseVigente from '../../assets/documents/AtaDiretoria_Marco2026.pdf';
+import ataTermoPosseJun2025 from '../../assets/documents/AtaDiretoria_Junho2025.pdf';
+import leiUtilidadePublica from '../../assets/documents/LeiUtilidadePublica.pdf';
+import atestadoCmdca from '../../assets/documents/AtestadoCMDCA_2025.pdf';
+import atestadoCmi from '../../assets/documents/AtestadoCMI_2025.pdf';
+import atestadoCms from '../../assets/documents/AtestadoCMS_2025.pdf';
+import balancoPatrimonial2025 from '../../assets/documents/BalancoPatrimonial_2025.pdf';
+import balancoPatrimonial2024 from '../../assets/documents/BalancoPatrimonial_2024.pdf';
+import demonstracaoResultado from '../../assets/documents/DemonstracaoResultado_2024.pdf';
+import repassesJun2026 from '../../assets/documents/RepassesTerceiroSetor_Junho2026.pdf';
+import repassesMai2026 from '../../assets/documents/RepassesTerceiroSetor_Maio2026.pdf';
+import planoTrabalho from '../../assets/documents/PlanoTrabalhoInstitucional_2026.pdf';
 
 const Transparencia = () => {
   const documentCategories = [
@@ -31,14 +36,26 @@ const Transparencia = () => {
         {
           title: 'Estatuto Social',
           description: 'Documento que define as regras de funcionamento da instituição.',
-          file: estatuto,
-          year: 'Vigente'
+          file: estatutoVigente,
+          year: '2026 - Vigente'
+        },
+        {
+          title: 'Estatuto Social',
+          description: 'Documento que define as regras de funcionamento da instituição.',
+          file: estatutoFev2025,
+          year: '2025 - Não vigente'
         },
         {
           title: 'Ata de Reunião - Termo de Posse',
           description: 'Ata da reunião de eleição e posse da diretoria atual.',
-          file: ataTermoPosse,
-          year: '2024'
+          file: ataTermoPosseVigente,
+          year: '2026 - Vigente'
+        },
+        {
+          title: 'Ata de Reunião - Termo de Posse',
+          description: 'Ata da reunião de eleição e posse da diretoria atual.',
+          file: ataTermoPosseJun2025,
+          year: '2025 - Não vigente'
         }
       ]
     },
@@ -81,8 +98,26 @@ const Transparencia = () => {
         {
           title: 'Balanço Patrimonial',
           description: 'Demonstrativo da situação patrimonial da entidade.',
-          file: balancoPatrimonial,
+          file: balancoPatrimonial2025,
+          year: '2025'
+        },
+        {
+          title: 'Balanço Patrimonial',
+          description: 'Demonstrativo da situação patrimonial da entidade.',
+          file: balancoPatrimonial2024,
           year: '2024'
+        },        
+        {
+          title: 'Repasses ao Terceiro Setor',
+          description: 'Detalhamento de valores repassados.',
+          file: repassesJun2026,
+          year: 'junho/2026'
+        },
+        {
+          title: 'Repasses ao Terceiro Setor',
+          description: 'Detalhamento de valores repassados.',
+          file: repassesMai2026,
+          year: 'maio/2026'
         },
         {
           title: 'Demonstração do Resultado do Exercício',
@@ -259,7 +294,7 @@ const Transparencia = () => {
                         <tr>
                           <th>Documento</th>
                           <th>Categoria</th>
-                          <th>Ano</th>
+                          <th>Período</th>
                           <th className="text-center">Ações</th>
                         </tr>
                       </thead>

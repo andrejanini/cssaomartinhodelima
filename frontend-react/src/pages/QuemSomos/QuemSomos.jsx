@@ -68,38 +68,48 @@ const QuemSomos = () => {
       photo: null
     },
     {
-      name: 'Gabriel Videira da Silva',
+      name: 'André Vanderlei Ferraz Arques',
       role: 'Presidente',
       photo: null
     },
     {
-      name: 'Crelsio Crema',
+      name: 'Gildomar Rocha Pereira',
       role: 'Vice-Presidente',
       photo: null
     },
     {
-      name: 'Edna Marques R.R. Teixeira',
-      role: 'Secretária',
+      name: 'Anderson Pereira dos Santos',
+      role: '1º Secretário',
+      photo: null
+    },
+    {
+      name: 'Cleonice Domingos',
+      role: '2ª Secretária',
+      photo: null
+    },
+    {
+      name: 'Silvia Cristina Oriente dos Santos',
+      role: '1ª Tesoureira',
+      photo: null
+    },
+    {
+      name: 'Crelsio Crema',
+      role: '2º Tesoureiro',
       photo: null
     },
     {
       name: 'Neide Guassu Sylla',
-      role: 'Vice-Secretária',
-      photo: null
-    },
-    {
-      name: 'Maria Aparecida Pessoa Rodrigues',
-      role: 'Tesoureira',
+      role: 'Conselho Fiscal',
       photo: null
     },
     {
       name: 'Wellington Sobral Romualdo de Araujo',
-      role: 'Vice-Tesoureiro',
+      role: 'Conselho Fiscal',
       photo: null
     },
     {
-      name: 'Gildomar Rocha Pereira',
-      role: 'Diretor de Eventos',
+      name: 'Ricardo Andrade dos Santos',
+      role: 'Conselho Fiscal',
       photo: null
     }
   ];
