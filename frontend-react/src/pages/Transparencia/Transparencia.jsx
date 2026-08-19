@@ -21,9 +21,12 @@ import atestadoCmi from '../../assets/documents/AtestadoCMI_2025.pdf';
 import atestadoCms from '../../assets/documents/AtestadoCMS_2025.pdf';
 import balancoPatrimonial2025 from '../../assets/documents/BalancoPatrimonial_2025.pdf';
 import balancoPatrimonial2024 from '../../assets/documents/BalancoPatrimonial_2024.pdf';
-import demonstracaoResultado from '../../assets/documents/DemonstracaoResultado_2024.pdf';
+import repassesJul2026 from '../../assets/documents/RepassesTerceiroSetorJulho2026.pdf';
 import repassesJun2026 from '../../assets/documents/RepassesTerceiroSetor_Junho2026.pdf';
 import repassesMai2026 from '../../assets/documents/RepassesTerceiroSetor_Maio2026.pdf';
+import despesasJul2026 from '../../assets/documents/DemonstrativoDespesasJulho2026.pdf';
+import despesasMai2026 from '../../assets/documents/DemonstrativoDespesasMaio2026.pdf';
+import demonstracaoResultado from '../../assets/documents/DemonstracaoResultado_2024.pdf';
 import planoTrabalho from '../../assets/documents/PlanoTrabalhoInstitucional_2026.pdf';
 
 const Transparencia = () => {
@@ -110,14 +113,32 @@ const Transparencia = () => {
         {
           title: 'Repasses ao Terceiro Setor',
           description: 'Detalhamento de valores repassados.',
+          file: repassesJul2026,
+          year: 'Julho/2026'
+        },
+        {
+          title: 'Repasses ao Terceiro Setor',
+          description: 'Detalhamento de valores repassados.',
           file: repassesJun2026,
-          year: 'junho/2026'
+          year: 'Junho/2026'
         },
         {
           title: 'Repasses ao Terceiro Setor',
           description: 'Detalhamento de valores repassados.',
           file: repassesMai2026,
-          year: 'maio/2026'
+          year: 'Maio/2026'
+        },
+        {
+          title: 'Demonstrativo de Despesas',
+          description: 'Detalhamento de despesas realizadas.',
+          file: despesasJul2026,
+          year: 'Julho/2026'
+        },
+        {
+          title: 'Demonstrativo de Despesas',
+          description: 'Detalhamento de despesas realizadas.',
+          file: despesasMai2026,
+          year: 'Maio/2026'
         },
         {
           title: 'Demonstração do Resultado do Exercício',
