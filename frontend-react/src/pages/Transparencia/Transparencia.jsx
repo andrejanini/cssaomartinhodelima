@@ -25,6 +25,7 @@ import repassesJul2026 from '../../assets/documents/RepassesTerceiroSetorJulho20
 import repassesJun2026 from '../../assets/documents/RepassesTerceiroSetor_Junho2026.pdf';
 import repassesMai2026 from '../../assets/documents/RepassesTerceiroSetor_Maio2026.pdf';
 import despesasJul2026 from '../../assets/documents/DemonstrativoDespesasJulho2026.pdf';
+import despesasJun2026 from '../../assets/documents/DemonstrativoDespesasJunho2026.pdf';
 import despesasMai2026 from '../../assets/documents/DemonstrativoDespesasMaio2026.pdf';
 import demonstracaoResultado from '../../assets/documents/DemonstracaoResultado_2024.pdf';
 import planoTrabalho from '../../assets/documents/PlanoTrabalhoInstitucional_2026.pdf';
@@ -133,6 +134,12 @@ const Transparencia = () => {
           description: 'Detalhamento de despesas realizadas.',
           file: despesasJul2026,
           year: 'Julho/2026'
+        },
+        {
+          title: 'Demonstrativo de Despesas',
+          description: 'Detalhamento de despesas realizadas.',
+          file: despesasJun2026,
+          year: 'Junho/2026'
         },
         {
           title: 'Demonstrativo de Despesas',
