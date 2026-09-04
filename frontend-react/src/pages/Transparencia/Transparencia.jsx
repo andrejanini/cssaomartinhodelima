@@ -19,6 +19,8 @@ import leiUtilidadePublica from '../../assets/documents/LeiUtilidadePublica.pdf'
 import atestadoCmdca from '../../assets/documents/AtestadoCMDCA_2025.pdf';
 import atestadoCmi from '../../assets/documents/AtestadoCMI_2025.pdf';
 import atestadoCms from '../../assets/documents/AtestadoCMS_2025.pdf';
+import termoFomento1102026 from '../../assets/documents/TermoFomento_110_2026.pdf';
+import termoCienciaRepasses from '../../assets/documents/TermoCienciaNotificacaoRepasses_2026.pdf';
 import balancoPatrimonial2025 from '../../assets/documents/BalancoPatrimonial_2025.pdf';
 import balancoPatrimonial2024 from '../../assets/documents/BalancoPatrimonial_2024.pdf';
 import repassesJul2026 from '../../assets/documents/RepassesTerceiroSetorJulho2026.pdf';
@@ -29,6 +31,7 @@ import despesasJun2026 from '../../assets/documents/DemonstrativoDespesasJunho20
 import despesasMai2026 from '../../assets/documents/DemonstrativoDespesasMaio2026.pdf';
 import demonstracaoResultado from '../../assets/documents/DemonstracaoResultado_2024.pdf';
 import planoTrabalho from '../../assets/documents/PlanoTrabalhoInstitucional_2026.pdf';
+import planoEntreNinhos from '../../assets/documents/PlanoTrabalhoEntreNinhos_2026.pdf';
 
 const Transparencia = () => {
   const documentCategories = [
@@ -100,6 +103,18 @@ const Transparencia = () => {
       icon: FaBalanceScale,
       documents: [
         {
+          title: 'Termo de Fomento 110-2026',
+          description: 'Termo de Fomento para execução de ações na área da saúde',
+          file: termoFomento1102026,
+          year: '2026'
+        },
+        {
+          title: 'Termo de Ciência e de Notificação',
+          description: 'Termo de Ciência e de Notificação - Repasses ao Terceiro Setor',
+          file: termoCienciaRepasses,
+          year: '2026'
+        },
+        {
           title: 'Balanço Patrimonial',
           description: 'Demonstrativo da situação patrimonial da entidade.',
           file: balancoPatrimonial2025,
@@ -164,6 +179,12 @@ const Transparencia = () => {
           title: 'Plano de Trabalho Institucional',
           description: 'Planejamento das atividades e metas para o próximo período.',
           file: planoTrabalho,
+          year: '2026'
+        },
+        {
+          title: 'Plano de Trabalho Projeto Entre-Ninhos',
+          description: 'Proposta do plano de trabalho do Projeto Entre-Ninhos.',
+          file: planoEntreNinhos,
           year: '2026'
         }
       ]
